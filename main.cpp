@@ -27,7 +27,7 @@ int main() {
     int PlayerGuess;
 
     cout << endl;
-    cout << "Enter a guess:" << endl;
+    cout << "Guess the first number: " << endl;
     cin >> PlayerGuess;
     cout << "You entered: " << PlayerGuess << endl;
 
