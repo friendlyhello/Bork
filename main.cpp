@@ -24,12 +24,15 @@ int main() {
     cout << "+ The code adds up to: " << CodeSum << endl; 
     cout << "+ The codes multiply to give: " << CodeProduct << endl;
 
-    int PlayerGuess;
+    int GuessA, GuessB, GuessC;
 
     cout << endl;
-    cout << "Guess the first number: " << endl;
-    cin >> PlayerGuess;
-    cout << "You entered: " << PlayerGuess << endl;
+    cout << "Guess 3 Numbers: " << endl;
+    cin >> GuessA;
+    cin >> GuessB;
+    cin >> GuessC;
+    cout << "You entered: " 
+    << GuessA << GuessB << GuessC << endl;
 
     return 0;
 }
