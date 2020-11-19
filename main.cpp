@@ -1,14 +1,20 @@
 #include <iostream>
 using namespace std;
 
-void PlayGame() 
+void PrintIntroduction()
 {
   // Print welcome messages to console
-    cout << " -- BORK BORK BORK -- " << endl;
-    cout << endl;
-    cout << "Enter 3 numbers to let the dogs out." << endl;
+    cout << 
+  "  _____ _____ _____ _____ \n"
+  " | __  |     | __  |  |  |\n"
+  " | __ -|  |  |    -|    -|\n"
+  " |_____|_____|__|__|__|__|\n"
+  ;
+    cout << "Enter 3 numbers to let the dogs out.\n";
+}
 
-
+void PlayGame() 
+{
     // Declare 3 number code
     const int CodeA = 4;
     const int CodeB = 3;
@@ -46,6 +52,7 @@ void PlayGame()
 
 int main() {
 
+    PrintIntroduction();
     PlayGame();
 
     return 0;
