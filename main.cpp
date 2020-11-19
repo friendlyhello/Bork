@@ -34,7 +34,7 @@ void PlayGame()
     cin >> GuessA >> GuessB >> GuessC;
 
     cout << "\nYou entered: " 
-    << GuessA << GuessB << GuessC;
+    << GuessA << " " << GuessB << " " << GuessC;
     
     // Store guesses
     int GuessSum = GuessA + GuessB + GuessC;
@@ -45,7 +45,7 @@ void PlayGame()
     {
       cout << "\n\nYou win!";
     } else {
-      cout << "\nThe dogs cannot come out! Try again!";
+      cout << "\n\nThe dogs cannot come out! Try again!";
     }
 }
 
