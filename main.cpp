@@ -23,8 +23,7 @@ void PlayGame()
     const int CodeSum = CodeA + CodeB + CodeC;
     const int CodeProduct = CodeA  *  CodeB  *  CodeC;
 
-    cout << endl;
-    cout << "+ There are three numbers in the code.";
+    cout << "\n+ There are three numbers in the code.";
     cout << "\n+ The code adds up to: " << CodeSum; 
     cout << "\n+ The codes multiply to give: " << CodeProduct;
 
