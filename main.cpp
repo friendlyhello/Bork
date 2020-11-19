@@ -20,31 +20,31 @@ int main() {
     const int CodeProduct = CodeA  *  CodeB  *  CodeC;
 
     cout << endl;
-    cout << "+ There are three numbers in the code." << endl;
-    cout << "+ The code adds up to: " << CodeSum << endl; 
-    cout << "+ The codes multiply to give: " << CodeProduct << endl;
+    cout << "+ There are three numbers in the code.\n";
+    cout << "+ The code adds up to: \n" << CodeSum; 
+    cout << "+ The codes multiply to give: \n" << CodeProduct;
 
     int GuessA, GuessB, GuessC;
 
     cout << endl;
 
-    cout << "Guess 3 Numbers: " << endl;
+    cout << "Guess 3 Numbers: \n";
 
-    cin >> GuessA;
-    cin >> GuessB;
-    cin >> GuessC;
+    cin >> GuessA >> GuessB >> GuessC;
 
-    cout << "You entered: " 
-    << GuessA << GuessB << GuessC << endl;
+    cout << "You entered: \n" 
+    << GuessA << GuessB << GuessC;
     
+    // Store guesses
     int GuessSum = GuessA + GuessB + GuessC;
     int GuessProduct = GuessA * GuessB * GuessC;
 
+    // Check if guess are correct/incorrect
     if(GuessSum == CodeSum && GuessProduct == CodeProduct)
     {
-      cout << "You win!" << endl;
+      cout << "You win! \n";
     } else {
-      cout <<  "The dogs cannot come out! Try again!" <<  endl;
+      cout <<  "The dogs cannot come out! Try again! \n";
     }
     
 
