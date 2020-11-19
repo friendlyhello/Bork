@@ -5,12 +5,12 @@ void PrintIntroduction()
 {
   // Print welcome messages to console
     cout << 
-  "  _____ _____ _____ _____ \n"
-  " | __  |     | __  |  |  |\n"
-  " | __ -|  |  |    -|    -|\n"
-  " |_____|_____|__|__|__|__|\n"
-  ;
-    cout << "Enter 3 numbers to let the dogs out.\n";
+    "  _____ _____ _____ _____ \n"
+    " | __  |     | __  |  |  |\n"
+    " | __ -|  |  |    -|    -|\n"
+    " |_____|_____|__|__|__|__|\n";
+
+    cout << "\nEnter 3 numbers to let the dogs out.\n";
 }
 
 void PlayGame() 
