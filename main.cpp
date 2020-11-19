@@ -27,12 +27,24 @@ int main() {
     int GuessA, GuessB, GuessC;
 
     cout << endl;
+
     cout << "Guess 3 Numbers: " << endl;
+
     cin >> GuessA;
     cin >> GuessB;
     cin >> GuessC;
+
     cout << "You entered: " 
     << GuessA << GuessB << GuessC << endl;
+    
+    int GuessSum = GuessA + GuessB + GuessC;
+    int GuessProduct = GuessA * GuessB * GuessC;
+
+    if(true)
+    {
+      cout << "You win!" << endl;
+    }
+    
 
     return 0;
 }
