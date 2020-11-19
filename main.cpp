@@ -40,9 +40,11 @@ int main() {
     int GuessSum = GuessA + GuessB + GuessC;
     int GuessProduct = GuessA * GuessB * GuessC;
 
-    if(true)
+    if(GuessSum == CodeSum && GuessProduct == CodeProduct)
     {
       cout << "You win!" << endl;
+    } else {
+      cout <<  "The dogs cannot come out! Try again!" <<  endl;
     }
     
 
