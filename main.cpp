@@ -1,11 +1,9 @@
 #include <iostream>
 using namespace std;
 
-// CMD + SHIFT + B to build/run program
-
-int main() {
-
-    // Print welcome messages to console
+void PlayGame() 
+{
+  // Print welcome messages to console
     cout << " -- BORK BORK BORK -- " << endl;
     cout << endl;
     cout << "Enter 3 numbers to let the dogs out." << endl;
@@ -20,19 +18,17 @@ int main() {
     const int CodeProduct = CodeA  *  CodeB  *  CodeC;
 
     cout << endl;
-    cout << "+ There are three numbers in the code.\n";
-    cout << "+ The code adds up to: \n" << CodeSum; 
-    cout << "+ The codes multiply to give: \n" << CodeProduct;
+    cout << "+ There are three numbers in the code.";
+    cout << "\n+ The code adds up to: " << CodeSum; 
+    cout << "\n+ The codes multiply to give: " << CodeProduct;
 
     int GuessA, GuessB, GuessC;
 
-    cout << endl;
-
-    cout << "Guess 3 Numbers: \n";
+    cout << "\n\nGuess 3 Numbers: \n\n";
 
     cin >> GuessA >> GuessB >> GuessC;
 
-    cout << "You entered: \n" 
+    cout << "\nYou entered: " 
     << GuessA << GuessB << GuessC;
     
     // Store guesses
@@ -42,11 +38,15 @@ int main() {
     // Check if guess are correct/incorrect
     if(GuessSum == CodeSum && GuessProduct == CodeProduct)
     {
-      cout << "You win! \n";
+      cout << "\n\nYou win!";
     } else {
-      cout <<  "The dogs cannot come out! Try again! \n";
+      cout << "\nThe dogs cannot come out! Try again!";
     }
-    
+}
+
+int main() {
+
+    PlayGame();
 
     return 0;
 }
