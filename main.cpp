@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 
+// Function definitions
 void PrintIntroduction()
 {
   // Print welcome messages to console
@@ -10,7 +11,7 @@ void PrintIntroduction()
     " | __ -|  |  |    -|    -|\n"
     " |_____|_____|__|__|__|__|\n";
 
-    cout << "\nEnter 3 numbers to let the dogs out.\n";
+    cout << "\nEnter 3 numbers to let the dogs out!\n";
 }
 
 void PlayGame() 
@@ -56,3 +57,5 @@ int main() {
 
     return 0;
 }
+
+// this game is stupid but i made it wtf i cant believe i understand all this now holy shit
