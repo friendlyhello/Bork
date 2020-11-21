@@ -19,7 +19,7 @@ void PrintIntroduction(int Difficulty)
 
 bool PlayGame(int Difficulty) 
 {
-    PrintIntroduction(Difficulty);
+  PrintIntroduction(Difficulty);
     
     // Declare 3 number code
     const int CodeA = 4;
@@ -48,16 +48,16 @@ bool PlayGame(int Difficulty)
     int GuessSum = GuessA + GuessB + GuessC;
     int GuessProduct = GuessA * GuessB * GuessC;
 
-    // Check if guess are correct/incorrect
-    if(GuessSum == CodeSum && GuessProduct == CodeProduct)
-    {
-      cout << "\n\nYou win!";
-      return true;
+  // Check if guess are correct/incorrect
+  if(GuessSum == CodeSum && GuessProduct == CodeProduct)
+  {
+    cout << "\n\nYou win!";
+    return true;
 
-    } else {
-      cout << "\n\nThe dogs cannot come out! Try again!";
-      return false;
-    }
+  } else {
+    cout << "\n\nThe dogs cannot come out! Try again!";
+    return false;
+  }
 }
 
 int main() {
@@ -67,6 +67,7 @@ int main() {
 
     while(true)
     {
+      //this is a statement that always fucks me up
       bool bLevelComplete = PlayGame(LevelDifficulty);
 
       cin.clear();
@@ -77,8 +78,6 @@ int main() {
         ++LevelDifficulty;
       }
     }
-    
-
     return 0;
 }
 
