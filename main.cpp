@@ -4,6 +4,8 @@ using namespace std;
 // Function definitions
 void PrintIntroduction()
 {
+    cout << endl;
+
   // Print welcome messages to console
     cout << 
     "  _____ _____ _____ _____ \n"
@@ -14,7 +16,7 @@ void PrintIntroduction()
     cout << "\nEnter 3 numbers to let the dogs out!\n";
 }
 
-void PlayGame() 
+bool PlayGame() 
 {
     // Declare 3 number code
     const int CodeA = 4;
@@ -24,13 +26,15 @@ void PlayGame()
     const int CodeSum = CodeA + CodeB + CodeC;
     const int CodeProduct = CodeA  *  CodeB  *  CodeC;
 
-    cout << "\n+ There are three numbers in the code.";
+    cout << "\n\n+ There are three numbers in the code.";
     cout << "\n+ The code adds up to: " << CodeSum; 
     cout << "\n+ The codes multiply to give: " << CodeProduct;
 
     int GuessA, GuessB, GuessC;
 
-    cout << "\n\nGuess 3 Numbers: \n\n";
+    cout << "\n\nGuess 3 Numbers. \n\n";
+
+    cout << "Please add a space after each number.\n\n";
 
     cin >> GuessA >> GuessB >> GuessC;
 
@@ -45,15 +49,33 @@ void PlayGame()
     if(GuessSum == CodeSum && GuessProduct == CodeProduct)
     {
       cout << "\n\nYou win!";
+      return true;
+
     } else {
       cout << "\n\nThe dogs cannot come out! Try again!";
+      return false;
     }
 }
 
 int main() {
 
     PrintIntroduction();
-    PlayGame();
+
+    int LevelDifficulty = 1;
+
+    while(true)
+    {
+      bool bLevelComplete = PlayGame();
+
+      cin.clear();
+      cin.ignore();
+
+      if(bLevelComplete)
+      {
+        
+      }
+    }
+    
 
     return 0;
 }
