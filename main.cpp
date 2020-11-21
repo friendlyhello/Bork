@@ -51,7 +51,7 @@ bool PlayGame(int Difficulty)
   // Check if guess are correct/incorrect
   if(GuessSum == CodeSum && GuessProduct == CodeProduct)
   {
-    cout << "\n\nYou win!";
+    cout << "\n\nYou win!\n\n";
     return true;
 
   } else {
@@ -65,12 +65,13 @@ int main() {
     int LevelDifficulty = 1;
     int const MaxDifficulty = 3;
 
-    while(true)
+    while(LevelDifficulty <= MaxDifficulty)
     {
-      //this is a statement that always fucks me up
+      //This is a statement that always fucks me up...
 
       // It's doing so many things:
-      // 1. bLevelComplete a boolean variable. It can store 
+
+      // 1. bLevelComplete is a boolean variable. It can store 
       //    bools. Why? because PlayGame's return type is a bool.
       // 2. It's calling PlayGame() 
       // 3. PlaylayGame is then getting shoved in to it which
@@ -81,7 +82,7 @@ int main() {
       //    in both function declarations above
 
       //  STFU get outta here
-      
+
       bool bLevelComplete = PlayGame(LevelDifficulty);
 
       cin.clear();
@@ -92,6 +93,11 @@ int main() {
         ++LevelDifficulty;
       }
     }
+
+    // Game winning message
+    cout << "All the dogs are out! They love you so much!\n\n";
+    cout << " -- THANK YOU FOR PLAYING -- \n\n";
+    
     return 0;
 }
 
