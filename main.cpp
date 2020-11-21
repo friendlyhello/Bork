@@ -2,7 +2,7 @@
 using namespace std;
 
 // Function definitions
-void PrintIntroduction()
+void PrintIntroduction(int Difficulty)
 {
     cout << endl;
 
@@ -14,10 +14,13 @@ void PrintIntroduction()
     " |_____|_____|__|__|__|__|\n";
 
     cout << "\nEnter 3 numbers to let the dogs out!\n";
+    cout << "\nLevel Difficulty: " << Difficulty;
 }
 
-bool PlayGame() 
+bool PlayGame(int Difficulty) 
 {
+    PrintIntroduction(Difficulty);
+    
     // Declare 3 number code
     const int CodeA = 4;
     const int CodeB = 3;
@@ -34,8 +37,8 @@ bool PlayGame()
 
     cout << "\n\nGuess 3 Numbers. \n\n";
 
-    cout << "Please add a space after each number.\n\n";
-
+    cout << "(Please add a space after each number.)\n\n";
+    
     cin >> GuessA >> GuessB >> GuessC;
 
     cout << "\nYou entered: " 
@@ -59,20 +62,18 @@ bool PlayGame()
 
 int main() {
 
-    PrintIntroduction();
-
     int LevelDifficulty = 1;
 
     while(true)
     {
-      bool bLevelComplete = PlayGame();
+      bool bLevelComplete = PlayGame(LevelDifficulty);
 
       cin.clear();
       cin.ignore();
 
       if(bLevelComplete)
       {
-        
+        ++LevelDifficulty;
       }
     }
     
