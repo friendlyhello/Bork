@@ -68,6 +68,20 @@ int main() {
     while(true)
     {
       //this is a statement that always fucks me up
+
+      // It's doing so many things:
+      // 1. bLevelComplete a boolean variable. It can store 
+      //    bools. Why? because PlayGame's return type is a bool.
+      // 2. It's calling PlayGame() 
+      // 3. PlaylayGame is then getting shoved in to it which
+      //    is also its own bool function that returns
+      //    true or false
+      // 3. Then the fucking thing also takes in a parameter
+      //    that is being passed around like a ho several times
+      //    in both function declarations above
+
+      //  STFU get outta here
+      
       bool bLevelComplete = PlayGame(LevelDifficulty);
 
       cin.clear();
