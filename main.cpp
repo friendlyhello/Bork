@@ -63,6 +63,7 @@ bool PlayGame(int Difficulty)
 int main() {
 
     int LevelDifficulty = 1;
+    int const MaxDifficulty = 3;
 
     while(true)
     {
